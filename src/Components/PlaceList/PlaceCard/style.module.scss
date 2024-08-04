@@ -1,0 +1,44 @@
+.Card {
+    width: 165px;
+    height: 250px;
+    background: #fff;
+    border-radius: 17px;
+    margin: 10px;
+
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.2);
+        transition: .7s;
+        Link{
+            img{
+                width: 110%;
+                height: 125px;
+                transition: .7s;
+            }
+        }
+    }
+
+    div {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: 120px;
+        border-radius: 17px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+}
+
+@media(min-width:320px) and (max-width:767px){
+    .Card{
+        width: 150px;
+        height: 200px;
+    }
+}

@@ -1,0 +1,281 @@
+.ModalSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+
+    .ModalContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        padding: 0 20px;
+        margin: 20px;
+
+        .ModalSub {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 50%;
+
+            .Btn {
+                font-size: 1.25rem;
+                position: absolute;
+                right: 20px;
+                background: var(--card-title-color);
+                color: #fff;
+                border-radius: 15px;
+            }
+
+
+            .CardBanner {
+                width: 100%;
+                max-width: 900px;
+                height: 380px;
+
+                border-radius: 17px;
+                margin: 0 10px;
+            }
+        }
+
+        .ModalSubTwo {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+
+            h2 {
+                font-family: var(--font-filters);
+                color: var(--title-red);
+                font-size: clamp(1rem, 0.375rem + 2vw, 1.5rem);
+                font-weight: 500;
+            }
+
+            h3 {
+                font-family: var(--font-text);
+                color: var(--card-title-color);
+                font-size: clamp(0.625rem, 0.3125rem + 1vw, 0.875rem);
+                font-weight: 500;
+                margin-top: 20px;
+            }
+
+        }
+    }
+
+    .ModalContainerTwo {
+        width: 100%;
+        margin: 30px 20px;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .ModalSubThree {
+            width: 50%;
+            font-family: var(--font-text);
+            color: var(--font-title-color);
+            font-size: clamp(0.625rem, 0rem + 2vw, 1.125rem);
+            font-weight: 100;
+            text-align: justify;
+            padding: 20px;
+
+            h2 {
+                font-family: var(--font-filters);
+                color: var(--title-red);
+                font-size: clamp(1rem, 0.375rem + 2vw, 1.5rem);
+                font-weight: 100;
+                margin: 30px 0px;
+            }
+        }
+
+        .ModalSubFour {
+            width: 50%;
+            border-radius: 17px;
+            margin: 10px;
+        }
+    }
+}
+
+@media(min-width:1024px) and (max-width: 2000px) {
+    .ModalSection {
+        max-width: 2000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .ModalContainer {
+            flex-direction: column;
+            margin: 10px auto;
+            width: 1000px;
+
+            .ModalSub {
+                width: 100%;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .Btn {
+                    font-size: 1.25rem;
+                    position: absolute;
+                    right: 20px;
+                    background: var(--card-title-color);
+                    color: #fff;
+                    border-radius: 15px;
+                }
+
+                .CardBanner {
+                    max-width: 1000px;
+                    height: 400px;
+                    margin: 0;
+                }
+            }
+
+            .ModalSubTwo {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+
+        .ModalContainerTwo {
+            flex-direction: column;
+            margin: 0 auto;
+            width: 1000px;
+
+            .ModalSubThree {
+                width: 100%;
+                margin-top: 10px;
+
+                h2 {
+                    margin: 5px auto;
+                }
+            }
+
+            .ModalSubFour {
+                width: 100%;
+                margin: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media(min-width:768px) and (max-width: 1023px) {
+    .ModalSection {
+        max-width: 1050px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .ModalContainer {
+            flex-direction: column;
+            margin: 10px auto;
+            width: 100%;
+
+            .ModalSub {
+                width: 100%;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .Btn {
+                    font-size: 1.25rem;
+                    position: absolute;
+                    right: 20px;
+                }
+
+                .CardBanner {
+                    max-width: 500px;
+                    height: 300px;
+                    margin: 0;
+                }
+            }
+
+            .ModalSubTwo {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+
+        .ModalContainerTwo {
+            flex-direction: column;
+            margin: 0 auto;
+
+            .ModalSubThree {
+                width: 100%;
+                margin-top: 10px;
+
+                h2 {
+                    margin: 5px auto;
+                }
+            }
+
+            .ModalSubFour {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media(min-width:320px) and (max-width:767px) {
+    .ModalSection {
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .ModalContainer {
+            flex-direction: column;
+            margin: 10px auto;
+            width: 100%;
+
+            .ModalSub {
+                width: 100%;
+                margin: 0;
+
+                .Btn {
+                    font-size: 1.25rem;
+                    position: absolute;
+                    right: 20px;
+                }
+
+                .CardBanner {
+                    max-width: 500px;
+                    height: 300px;
+                    margin: 0;
+                }
+            }
+
+            .ModalSubTwo {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+
+        .ModalContainerTwo {
+            flex-direction: column;
+            margin: 0 auto;
+
+            .ModalSubThree {
+                width: 100%;
+                margin-top: 10px;
+
+                h2 {
+                    margin: 5px auto;
+                }
+            }
+
+            .ModalSubFour {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    }
+}

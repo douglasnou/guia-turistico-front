@@ -1,0 +1,50 @@
+%filter{
+    font-family: var(--font-filters);
+    font-weight: 400;
+}
+
+.filter-sub{
+    @extend %filter;
+    font-size: clamp(.75rem, 5vw, 1rem);
+    color: var(--filter-title-color);
+}
+
+.filter-item{
+    @extend %filter;
+    font-size: clamp(.75rem, 5vw, .875rem);
+    color: var(--filter-item-color);
+}
+
+%title{
+    font-family: var(--font-main);
+    color: var(--title-color);
+}
+
+.title-main{
+    @extend %title;
+    font-size: clamp(1.2rem, -2rem + 8vw, 2.5rem);
+    font-weight: 500;
+}
+
+.title-down{
+    @extend %title;
+    font-size: clamp(0.75rem, -0.125rem + 2vw, 1.125rem);
+    font-weight: 300;
+}
+
+%card{
+    font-family: var(--font-filters);
+    font-weight: 400;
+}
+
+.card-title{
+    @extend %card;
+    color: var(--card-title-color);
+    font-size: clamp(0.625rem, 0.4688rem + 0.5vw, 0.75rem);
+}
+
+.card-sub{
+    @extend %card;
+    color: var(--card-item-color);
+    font-size: clamp(0.625rem, 0.4688rem + 0.5vw, 0.75rem);
+}
